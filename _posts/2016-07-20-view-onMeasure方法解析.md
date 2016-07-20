@@ -7,7 +7,7 @@ categories: jekyll
 
 函数如下：
 
-{% highlight java %}
+{% highlight ruby %}
 @Override
 protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
     //View的measureSpec由其父容器的measureSpec及自身的LayoutParams共同决定
