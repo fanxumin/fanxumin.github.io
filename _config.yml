@@ -48,7 +48,7 @@ share:
 enableTags: true
 tagarray: []
 
-url: "http://aboutashu.com/hcz-jekyll-blog"
+url: "https://github.com/fanxumin/fanxumin.github.io"
 baseurl: "/hcz-jekyll-blog"
 paginate: 20
 per_page: 20
