@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2016-06-04 13:50:39
+title:  "View onMeasure方法解析"
+date:   2016-07-20 21:17:39
 categories: jekyll
 ---
 
 函数如下：
 
-{% highlight ruby %}
+{% highlight java %}
 @Override
 protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
     //View的measureSpec由其父容器的measureSpec及自身的LayoutParams共同决定
