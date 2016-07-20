@@ -2,7 +2,7 @@ title: fanxumin
 description: My Personal Blog
 author: fanxumin
 logo: http://aboutashu.com/hcz-jekyll-blog/static/img/avatar.png
-github: https://github.com/ashutosh2k12
+github: https://github.com/fanxumin
 about: cool boy developer
 disqus_shortname: aboutashu
 google_analytics: UA-72862926-1
@@ -21,7 +21,7 @@ urls:
       url: '#'
       icon: fa-graduation-cap
     - text: Github
-      url: https://github.com/ashutosh2k12
+      url: https://github.com/fanxumin
       icon: fa-github
     - text: XML Feed
       url: /feed.xml
