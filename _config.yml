@@ -48,8 +48,8 @@ share:
 enableTags: true
 tagarray: []
 
-url: "https://github.com/fanxumin/fanxumin.github.io"
-baseurl: "/hcz-jekyll-blog"
+url: "https://fanxumin.github.io"
+baseurl: "/"
 paginate: 20
 per_page: 20
 paginate_path: "/page:num/"
