@@ -49,7 +49,7 @@ enableTags: true
 tagarray: []
 
 url: "https://fanxumin.github.io"
-baseurl: "/"
+baseurl: "https://fanxumin.github.io/"
 paginate: 20
 per_page: 20
 paginate_path: "/page:num/"
