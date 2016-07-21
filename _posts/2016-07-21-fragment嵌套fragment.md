@@ -4,22 +4,16 @@ title:  "关于Fragment嵌套Fragment"
 date:   2016-07-21 20:12:39
 categories: android
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+今天在一个开源项目上看到fragment里嵌套一个Tablayout,一个ViewPager的写法，以方便在导航栏中点击时，外层fragment切换时，连带内层ViewPager里几个fragment一起切换了，并确保它们的存活（在内存不紧张的情况下）。
 
-Jekyll also offers powerful support for code snippets:
+[ 项目地址 ][project-address]
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+实现起来很简单，假设主页面为MainActivity,我们在它的布局文件里先放一个FrameLayout,该FrameLayout就是用以外层fragment切换使用。
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+其次，在外层fragment布局里，存放一个TabLayout和一个ViewPager，以实现多个子fragment左右滑动切换的效果，然后给ViewPager设置FragmentPageAdapter，这几步很简单，就不贴代码了。
 
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+这种做法的好处？
+如果我们要切换多个外层的fragment,就可以使用这种做法(具体效果可参考android版知乎)，以确保所有内层fragment的存活，保证在外层fragment切换时的流畅体验。此外，这种做法更符合android开发规范，值得提倡，这里就不贴代码了，因为实现起来太easy辣，n(*≧▽≦*)n。完结
+
+[project-address]: https://github.com/DanteAndroid/Knowledge
