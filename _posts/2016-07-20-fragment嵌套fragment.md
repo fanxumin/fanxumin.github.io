@@ -1,12 +1,11 @@
 ---
 layout: post
 title:  "关于Fragment嵌套Fragment"
-date:   2016-07-21 20:12:39
+date:   2016-07-20 20:12:39
 categories: android
 ---
 
-今天在一个开源项目上看到fragment里嵌套一个Tablayout,一个ViewPager的写法，以方便在导航栏中点击时，外层fragment切换时，连带内层ViewPager里几个fragment一起切换了，并确保它们的存活（在内存不紧张的情况下）。
-
+今天在一个开源项目上看到fragment里嵌套一个Tablayout,一个ViewPager的写法，以方便在导航栏中点击时，外层fragment切换时，连带内层ViewPager里几个fragment一起切换了，并确保它们的存活（在内存不紧张的情况下）。                                                                                                                           
 [ 项目地址 ][project-address]
 
 实现起来很简单，假设主页面为MainActivity,我们在它的布局文件里先放一个FrameLayout,该FrameLayout就是用以外层fragment切换使用。
