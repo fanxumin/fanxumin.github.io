@@ -17,3 +17,4 @@ categories: android
 如果我们要切换多个外层的fragment,就可以使用这种做法(具体效果可参考android版知乎)，以确保所有内层fragment的存活，保证在外层fragment切换时的流畅体验。此外，这种做法更符合android开发规范，值得提倡，这里就不贴代码了，因为实现起来太easy辣，n(*≧▽≦*)n。完结
 
 [project-address]: https://github.com/DanteAndroid/Knowledge
+
