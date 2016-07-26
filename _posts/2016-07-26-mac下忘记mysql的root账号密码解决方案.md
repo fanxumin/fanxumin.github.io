@@ -1,4 +1,14 @@
-# mac下忘记mysql root账号的密码怎么办
+---
+layout: post
+title:  "mac下忘记mysql root账号的密码怎么办"
+date:   2016-07-26 20:12:39
+tags:
+- Database
+categories: database
+---
+
+
+ mac下忘记mysql root账号的密码怎么办
 step1:
 苹果->系统偏好设置->最下边点mysql 在弹出页面中 关闭mysql服务（点击stop mysql server）
 
